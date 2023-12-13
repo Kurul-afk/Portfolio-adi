@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Unbounded:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css"
+    />
+
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container container">
+        <a href="#" class="header__logo">Main</a>
+        <ul class="header__links">
+          <li class="header__link"><a href="#about__id">About</a></li>
+          <li class="header__link"><a href="#skill__id">Skill</a></li>
+          <li class="header__link"><a href="#contact__id">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
+    <section class="main" id="main__id">
+      <div class="main__container container">
+        <div class="main__left">
+          <h1 class="main__title">Shergaziev Arsen</h1>
+          <p class="main__description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur
+            dignissimos necessitatibus hic provident aliquid numquam, ratione
+            doloribus accusantium, repudiandae pariatur ipsum, unde itaque
+            voluptatibus facilis amet.
+          </p>
+          <button class="main__button">Download resume</button>
+        </div>
+        <img class="main__img" src="./img/main-man-white.svg" alt="logo" />
+      </div>
+    </section>
+    <section class="about" id="about__id">
+      <div class="about__container container">
+        <h2 class="about__title">About me</h2>
+        <p class="about__description">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          veritatis quos laborum. Nam praesentium accusantium dolore
+          necessitatibus quos reprehenderit facere corporis quisquam id iusto
+          officia temporibus mollitia a voluptatem repellendus corrupti est ab
+          magnam adipisci dicta, nobis dolorem vero pariatur.
+        </p>
+      </div>
+    </section>
+    <section class="skill" id="skill__id">
+      <div class="skill__container container">
+        <h2 class="skill__title">Skills</h2>
+        <ul class="skill__list">
+          <li class="skill__card">
+            <h2 class="skill__card_title">
+              <span class="skill__card_html">HTML</span>
+              <span class="skill__card_slice">/</span>
+              <span class="skill__card_css">CSS</span>
+            </h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="skill__card">
+            <h2 class="skill__card_title js">JavaScript</h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="skill__card">
+            <h2 class="skill__card_title ts">TypeScript</h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="skill__card">
+            <h2 class="skill__card_title react">React</h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="skill__card">
+            <h2 class="skill__card_title git">Git</h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+          <li class="skill__card">
+            <h2 class="skill__card_title rest">REST API</h2>
+            <p class="skill__card_description">Lorem ipsum dolor sit amet.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="project">
+      <div class="project__container"></div>
+    </section>
+    <footer>
+      <div class="footer__container container">
+        <ul class="footer__links">
+          <li class="footer__link"><a href="#">Main</a></li>
+          <li class="footer__link"><a href="#">About</a></li>
+          <li class="footer__link"><a href="#">Skills</a></li>
+          <li class="footer__link"><a href="#">Contacts</a></li>
+        </ul>
+        <div class="footer__right">
+          <div class="footer__text">
+            <p class="footer__contact">+9961234567890</p>
+            <p class="footer__contact">example@gmail.com</p>
+          </div>
+          <div class="footer__social_container">
+            <a href="#" class="footer__social"
+              ><img
+                style="width: 30px"
+                src="./img/telegram-svgrepo-com.svg"
+                alt="" /></a
+            ><a href="#" class="footer__social"
+              ><img
+                style="width: 30px"
+                src="./img/linkedin-svgrepo-com.svg"
+                alt="" /></a
+            ><a href="#" class="footer__social"
+              ><img
+                style="width: 30px"
+                src="./img/whatsapp-whats-app-svgrepo-com.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
