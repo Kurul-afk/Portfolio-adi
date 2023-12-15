@@ -6,14 +6,36 @@
   list-style-type: none;
   text-decoration: none;
   font-size: 16px;
+  transition: 0.2s;
 }
 header,
 footer {
   background-color: #171717d3;
 }
-.header__container {
+button {
+  cursor: pointer;
+}
+button:active {
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #282828;
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #0f0f0f;
+}
+input {
+  outline: none;
+}
+.container {
   width: 80%;
   margin: 0 auto;
+}
+.header__container {
   padding: 1.7rem 0;
   display: flex;
   align-items: center;
@@ -22,6 +44,10 @@ footer {
   font-size: 24px;
   font-family: "Unbounded", sans-serif;
   color: #ededed;
+  margin-right: 2.3rem;
+}
+.header__logo:hover {
+  color: #da0037;
 }
 .header__links {
   display: flex;
@@ -31,18 +57,191 @@ footer {
 .header__link a {
   color: #ededed;
 }
+.header__link a:hover {
+  color: #da0037;
+}
+.main {
+  background-color: #171717d3;
+  padding: 2.5rem 0;
+}
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__title {
+  font-size: 36px;
+  margin-bottom: 1.7rem;
+  font-family: "Unbounded", sans-serif;
+  color: #ededed;
+}
+.main__description {
+  color: #ededed;
+  margin-bottom: 1.7rem;
+}
+.main__button {
+  padding: 0.5rem 1rem;
+  background-color: #ededed;
+  border: none;
+  border-radius: 1rem;
+}
+.main__button:hover {
+  background-color: #da0037;
+  color: #ededed;
+}
+.main__img {
+  width: 40%;
+}
+
+.about {
+  background-color: #da0037;
+  padding: 5rem 0;
+}
+.about__container {
+  background-color: #ededed;
+  border-radius: 1.7rem;
+  padding: 1.5rem 2rem;
+}
+.about__title {
+  text-align: center;
+  font-size: 48px;
+}
+.about__description {
+  text-align: center;
+}
+
+.skill {
+  background-color: #171717;
+  padding: 5rem 0;
+}
+.skill__title {
+  font-size: 48px;
+  text-align: center;
+  color: #ededed;
+  margin-bottom: 1.2rem;
+}
+.skill__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem 0;
+}
+.skill__card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ededed;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.skill__card:hover {
+  background-color: #0f0f0f;
+}
+.skill__card:hover .skill__card_html {
+  color: #fb9107;
+}
+.skill__card:hover .skill__card_slice {
+  color: #ededed;
+}
+.skill__card:hover .skill__card_css {
+  color: #2db6ff;
+}
+.skill__card:hover .js {
+  color: #fff700;
+}
+.skill__card:hover .ts {
+  color: #0471fe;
+}
+.skill__card:hover .react {
+  color: #0a39e3;
+}
+.skill__card:hover .git {
+  color: #e80520;
+}
+.skill__card:hover .rest {
+  color: #23ca02;
+}
+.skill__card:hover .skill__card_description {
+  color: #ededed;
+}
+
+.contacts {
+  background-color: #0a39e3;
+  padding: 5rem 0;
+}
+.contacts__title {
+  font-size: 48px;
+  text-align: center;
+  color: #ededed;
+  margin: 1.7rem;
+}
+.contacts__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contacts__form_inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 45%;
+}
+
+.contacts__item label {
+  font-size: 28px;
+  color: #ededed;
+}
+.contacts__input {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem 1rem;
+  font-size: 20px;
+}
+.contacts__btn {
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 18px;
+}
+
+.contacts__btn:hover {
+  background-color: #0471fe;
+  color: #ededed;
+}
+
 .footer__container {
-  width: 80%;
-  margin: 0 auto;
   padding: 1.7rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.footer__links {
+.footer__link {
+  padding-bottom: 0.5rem;
+}
+.footer__link a {
+  color: #ededed;
+}
+.footer__link a:hover {
+  color: #da0037;
+}
+.footer__text {
+  margin-bottom: 1.7rem;
+  color: #ededed;
+}
+.footer__contact {
+  margin-bottom: 1rem;
+}
+.footer__social_container {
   display: flex;
   gap: 1rem;
-}
-.footer__right {
 }
